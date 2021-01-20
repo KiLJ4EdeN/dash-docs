@@ -26,8 +26,10 @@ Certain versions packages that you install on Windows may not be available on th
 that Dash Enterprise uses or vice versa. If you run into cross-operating system package issues,
 we recommend using Dash Enterprise Workspaces.
 
-Redeploying the application will not reinstall dependencies unless you have changed 
-the `requirements.txt` file.
+If you are including your own tarball files of your own Python packages, the filenames will need to
+change in order for Dash Enterprise to reinstall the packages. If you are developing and testing
+your own Python packages, we recommend using increasing prelease version numbers (e.g. rc-1) when
+you deploy changes to your package.
 
 Here is an example of a `requirements.txt` file of an app that uses `dash`, 
 `gunicorn`, `pandas`, `dash-design-kit`, and `dash-snapshots`.
